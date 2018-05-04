@@ -1,6 +1,6 @@
 FROM ubuntu
 MAINTAINER Federico Pereira <fpereira@cnsoluciones.com>
 RUN apt-get update && apt-get -y install jp2a
-ADD https://raw.githubusercontent.com/lordbasex/docker/master/docker-mario-run/docker-mario-run.jpg /tmp/docker-mario-run.jpg
+ADD https://raw.githubusercontent.com/lordbasex/Docker/master/docker-super-mario-run/docker-super-mario-run.jpg /tmp/docker-super-mario-run.jpg
 ENV TERM xterm-256color
-CMD jp2a /tmp/docker-mario-run.jpg
+CMD jp2a /tmp/docker-super-mario-run.jpg
