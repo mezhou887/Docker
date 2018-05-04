@@ -1,0 +1,15 @@
+#file: /etc/systemd/system/docker_fop2.service
+#systemctl start docker_fop2
+#systemctl enable docker_fop2
+
+[Unit]
+Wants=docker.service
+After=docker.service
+
+[Service]
+RemainAfterExit=yes
+ExecStart=/usr/bin/docker start fop2
+ExecStop=/usr/bin/docker stop fop2
+
+[Install]
+WantedBy=multi-user.target
