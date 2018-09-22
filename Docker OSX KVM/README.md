@@ -2,7 +2,7 @@
 
 ## Intro
 
-**Note**: you have to have Apple® hardware which the operating system is free unicamete for who has purchased your equipment.
+**Note**: you have to have Apple® hardware which the operating system is free only for who has purchased your equipment.
 
 This project does not encourage piracy but to be able to test, develop applications without having to install extra applications on our own Mac.
 
