@@ -29,9 +29,8 @@ This project does not distribute any Apple® source code.
 | de | en-us | fi | fr-be | hr    | it | lv | nl-be | pt | sl    | tr |
 
 ## Usage
-### Run Container
 
-1. Docker run
+### Run
 
 Kernel is required with kvm support.
 
@@ -40,9 +39,11 @@ docker run -itd  --name macOS --device /dev/kvm:/dev/kvm -p 9922:22 \
 -p 5900:8080 -v /path/to/iso/folder:/data lordbasex/docker-osx-kvm
 ```
 
-2. Create Password VNC
+### Create Password VNC
+
 ```
 docker exec macOS cli changepassword mypassword
 ```
 
-3. Connect to Browser http://127.0.0.1:5900
+### Connect to Browser 
+http://127.0.0.1:5900
