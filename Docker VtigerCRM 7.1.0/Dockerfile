@@ -2,7 +2,8 @@ FROM centos:7
 MAINTAINER Federico Pereira <fpereira@cnsoluciones.com>
 
 RUN mkdir -p /usr/src/vtigercrm
-COPY vtigercrm7.1.0.tar.gz /usr/src/vtigercrm 
+#COPY vtigercrm7.1.0.tar.gz /usr/src/vtigercrm 
+ADD https://sourceforge.net/projects/vtigercrm/files/vtiger%20CRM%207.1.0/Core%20Product/vtigercrm7.1.0.tar.gz/download /usr/src/vtigercrm/vtigercrm7.1.0.tar.gz
 
 RUN yum -y update \
 && yum -y install vim tar wget unzip htop net-tools iproute telnet mc mlocate cron\
